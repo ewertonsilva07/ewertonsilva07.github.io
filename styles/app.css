@@ -41,3 +41,12 @@ body{
 .hide-greeting {
     display: none;
 }
+
+.self-introduction {
+    display: none;
+}
+
+.show-self-introduction {
+    display: block;
+    animation: showContent 0.3s ease-in;
+}
