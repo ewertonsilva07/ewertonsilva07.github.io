@@ -50,3 +50,7 @@ body{
     display: block;
     animation: showContent 0.3s ease-in;
 }
+
+.constructor-icon {
+    font-size: 5rem;
+}
