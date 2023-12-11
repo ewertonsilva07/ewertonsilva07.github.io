@@ -24,13 +24,13 @@ body{
     margin: 20px 10px 20px;
 }
 
-.page-content {
+.hide-page-content {
     display: none;
 }
 
 .show-page-content {
     display: block;
-    animation: showContent 0.3s ease-in;
+    animation: showContent 0.5s ease-in;
 }
 
 @keyframes showContent {
@@ -38,28 +38,9 @@ body{
     to {opacity: 1;}
 }
 
-
-.hide-greeting {
-    display: none;
-}
-
-.self-introduction {
-    display: none;
-}
-
-.show-self-introduction {
-    display: block;
-    animation: showContent 0.3s ease-in;
-}
-
 .constructor-icon {
     font-size: 5rem;
 }
-
-/* #abilities img {
-    height: 100px;
-    width: 100px;
-} */
 
 .abilities-card {
     font-size: 5rem;

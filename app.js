@@ -1,21 +1,40 @@
-const pageContent = document.querySelector('.page-content');
 const greetingMsg = document.querySelector('#greeting-msg');
 const selfIntroduction = document.querySelector('.self-introduction');
+const codeSectionTitle = document.querySelector('h3:nth-of-type(1)');
+const designSection = document.querySelector('#design')
+const mySkillsTitle = document.querySelector('#abilities h2');
 
 
 const contentTransition = function(el, classToggle, delay) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            el.classList.add(classToggle)
+            el.classList.toggle(classToggle)
             resolve();
         }, delay)
     })
 }
 
+const htmlIcon = document.querySelector('#code i:nth-of-type(1)'); 
+const cssIcon = document.querySelector('#code i:nth-of-type(2)'); 
+const javascriptIcon = document.querySelector('#code i:nth-of-type(3)'); 
+const bootstrapIcon = document.querySelector('#code i:nth-of-type(4)'); 
+const gitIcon = document.querySelector('#code i:nth-of-type(5)'); 
+const gitHubIcon = document.querySelector('#code i:nth-of-type(6)'); 
+
 async function transition(){
-    await contentTransition(pageContent,'show-page-content', 2000);
-    await contentTransition(greetingMsg,'hide-greeting', 6000);
-    contentTransition(selfIntroduction,'show-self-introduction', 1000)
+    await contentTransition(greetingMsg,'show-page-content', 3000);
+    await contentTransition(greetingMsg,'show-page-content', 3000);
+    await contentTransition(selfIntroduction,'show-page-content', 1000);
+    await contentTransition(mySkillsTitle, 'show-page-content', 1000)
+    await contentTransition(codeSectionTitle,'show-page-content', 1000)
+    await contentTransition(htmlIcon,'show-page-content', 500)
+    await contentTransition(cssIcon, 'show-page-content', 500)
+    await contentTransition(javascriptIcon, 'show-page-content', 500)
+    await contentTransition(bootstrapIcon, 'show-page-content', 500)
+    await contentTransition(gitIcon, 'show-page-content', 500)
+    contentTransition(gitHubIcon, 'show-page-content', 500)
 }
 
 transition();
+
+
