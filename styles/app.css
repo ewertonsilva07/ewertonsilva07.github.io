@@ -55,3 +55,17 @@ body{
 .constructor-icon {
     font-size: 5rem;
 }
+
+/* #abilities img {
+    height: 100px;
+    width: 100px;
+} */
+
+.abilities-card {
+    font-size: 5rem;
+    color:#c9c9c99c;
+    background-color: #14141415;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 1%;
+}
