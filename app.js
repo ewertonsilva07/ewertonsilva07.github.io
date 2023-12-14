@@ -32,16 +32,16 @@ async function transition(){
     await contentTransition(selfIntroduction,'show-page-content', 1000);
     await contentTransition(mySkillsTitle, 'show-page-content', 1000);
     await contentTransition(codeSectionTitle,'show-page-content', 1000);
-    await contentTransition(htmlIcon,'show-page-content', 500);
-    await contentTransition(cssIcon, 'show-page-content', 500);
-    await contentTransition(javascriptIcon, 'show-page-content', 500);
-    await contentTransition(bootstrapIcon, 'show-page-content', 500);
-    await contentTransition(gitIcon, 'show-page-content', 500);
-    await contentTransition(gitHubIcon, 'show-page-content', 500);
-    await contentTransition(designSectionTitle, 'show-page-content', 1000);
-    await contentTransition(photoshopIcon, 'show-page-content', 500);
-    await contentTransition(figmaIcon, 'show-page-content', 500);
-    await contentTransition(premiereIcon, 'show-page-content', 500);
+    await contentTransition(htmlIcon,'show-page-content', 300);
+    await contentTransition(cssIcon, 'show-page-content', 300);
+    await contentTransition(javascriptIcon, 'show-page-content', 300);
+    await contentTransition(bootstrapIcon, 'show-page-content', 300);
+    await contentTransition(gitIcon, 'show-page-content', 300);
+    await contentTransition(gitHubIcon, 'show-page-content', 300);
+    await contentTransition(designSectionTitle, 'show-page-content', 500);
+    await contentTransition(photoshopIcon, 'show-page-content', 300);
+    await contentTransition(figmaIcon, 'show-page-content', 300);
+    await contentTransition(premiereIcon, 'show-page-content', 300);
 
 }
 
