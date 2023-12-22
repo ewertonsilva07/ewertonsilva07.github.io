@@ -53,14 +53,14 @@ body{
     border-radius: 1%;
 }
 
-.project-section {
-    background-color: #2928281c;
-}
-
 .bolded-text {
     font-weight: 700;
 }
 
 .section-background {
     background-color: #53535309;
+}
+
+.drop-shadow {
+    box-shadow: 3px 3px 4px #000000;
 }
