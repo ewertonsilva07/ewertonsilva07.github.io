@@ -4,7 +4,13 @@ body{
     background-color: #000000;
     font-family: 'Roboto Slab', sans-serif;
     color: #f0f8ffbe;
+    font-weight: 300;
 }
+
+a {
+    text-decoration: none;
+}
+
 .my-nav{
     font-size: 1.5rem;
 }
@@ -64,3 +70,14 @@ body{
 .drop-shadow {
     box-shadow: 3px 3px 4px #000000;
 }
+
+.text-size {
+    font-size: 1.5rem;
+}
+
+.contact-link {
+    font-size: 3rem;
+    color: #ffffffc4;
+    margin:0 5px 0;
+}
+
