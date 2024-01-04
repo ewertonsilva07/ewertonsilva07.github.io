@@ -9,7 +9,7 @@ This is my first attempt at a website like this, I will be using HTML, CSS, Boot
 
 ### **Task** 2️⃣: Create the Self Introduction Page and the Animations for the tecnologies/skill cards. ✔️✔️
 
-### **Task** 3️⃣: Create the Projects main page which will lead to the Selected Project Page. 🕙👷
+### **Task** 3️⃣: Create the Projects main page which will lead to the Selected Project Page. ✔️✔️
 
 ### **Task** 4️⃣: Create the pages to Show each Projects. 📚📚
 ---
