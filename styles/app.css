@@ -46,17 +46,27 @@ a {
     to {opacity: 1;}
 }
 
-.constructor-icon {
+.loading-bar {
+    height: 60px;
+    width: 0px;
+    background-color: #bdf5ff;
+}
+
+.loading-bar-fill{
+    width: 100%;
+    transition: width 3s;
+}
+
+.abilities-logo {
     font-size: 5rem;
 }
 
-.abilities-card {
-    font-size: 5rem;
-    color:#c9c9c99c;
+.my-skill-card {
     background-color: #14141415;
+    color:#c9c9c99c;
     padding: 40px;
-    margin: 10px;
     border-radius: 1%;
+    margin: 10px;
 }
 
 .bolded-text {

@@ -1,19 +1,20 @@
 const selectLogos = {
     greetingMsg : document.querySelector('#greeting-msg'),
+    loadingBar: document.querySelector('.loading-bar'),
     selfIntroduction : document.querySelector('.self-introduction'),
     abilitiesSection : document.querySelector('#abilities'),
     codeSectionTitle : document.querySelector('h3:nth-of-type(1)'),
     designSectionTitle : document.querySelector('h3:nth-of-type(2)'),
     mySkillsTitle : document.querySelector('#abilities h2'),
-    htmlIcon : document.querySelector('#code i:nth-of-type(1)'), 
-    cssIcon : document.querySelector('#code i:nth-of-type(2)'), 
-    javascriptIcon : document.querySelector('#code i:nth-of-type(3)'), 
-    bootstrapIcon : document.querySelector('#code i:nth-of-type(4)'), 
-    gitIcon : document.querySelector('#code i:nth-of-type(5)'), 
-    gitHubIcon : document.querySelector('#code i:nth-of-type(6)'), 
-    photoshopIcon : document.querySelector('#design i:nth-of-type(1)'),
-    figmaIcon : document.querySelector('#design i:nth-of-type(2)'),
-    premiereIcon : document.querySelector('#design i:nth-of-type(3)')
+    htmlIcon : document.querySelector('#code .my-skill-card:nth-of-type(1)'), 
+    cssIcon : document.querySelector('#code .my-skill-card:nth-of-type(2)'), 
+    javascriptIcon : document.querySelector('#code .my-skill-card:nth-of-type(3)'), 
+    bootstrapIcon : document.querySelector('#code .my-skill-card:nth-of-type(4)'), 
+    gitIcon : document.querySelector('#code .my-skill-card:nth-of-type(5)'), 
+    gitHubIcon : document.querySelector('#code .my-skill-card:nth-of-type(6)'), 
+    photoshopIcon : document.querySelector('#design .my-skill-card:nth-of-type(1)'),
+    figmaIcon : document.querySelector('#design .my-skill-card:nth-of-type(2)'),
+    premiereIcon : document.querySelector('#design .my-skill-card:nth-of-type(3)')
 }
 
 
@@ -29,6 +30,7 @@ const contentTransition = function(el, classToggle, delay) {
 
 async function transition(){
     await contentTransition(selectLogos.greetingMsg,'show-page-content', 1000);
+    await contentTransition(selectLogos.loadingBar,'loading-bar-fill', 200);
     await contentTransition(selectLogos.greetingMsg,'show-page-content', 3000);
     await contentTransition(selectLogos.selfIntroduction,'show-page-content', 1000);
     await contentTransition(selectLogos.abilitiesSection, 'show-page-content', 1000);
