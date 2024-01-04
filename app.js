@@ -45,7 +45,7 @@ async function transition(){
     await contentTransition(selectLogos.designSectionTitle, 'show-page-content', 500);
     await contentTransition(selectLogos.photoshopIcon, 'show-page-content', 300);
     await contentTransition(selectLogos.figmaIcon, 'show-page-content', 300);
-    await contentTransition(selectLogos.premiereIcon, 'show-page-content', 300);
+    contentTransition(selectLogos.premiereIcon, 'show-page-content', 300);
 }
 
 transition();

@@ -47,9 +47,9 @@ a {
 }
 
 .loading-bar {
-    height: 60px;
+    height: 50px;
     width: 0px;
-    background-color: #bdf5ff;
+    background-color: #81ecff;
 }
 
 .loading-bar-fill{
