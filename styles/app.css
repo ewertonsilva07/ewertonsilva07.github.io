@@ -62,11 +62,11 @@ a {
 }
 
 .my-skill-card {
-    background-color: #14141415;
-    color:#c9c9c99c;
+    background-color: #7c7c7c44;
+    color:#ffffffce;
     padding: 40px;
     border-radius: 1%;
-    margin: 10px;
+    margin: 5px;
 }
 
 .bolded-text {
@@ -74,7 +74,7 @@ a {
 }
 
 .section-background {
-    background-color: #53535309;
+    background-color: #ffffff09;
 }
 
 .drop-shadow {
