@@ -34,14 +34,31 @@ const mySkillsTitle = new getPageElement('#abilities h2');
 //     mySkillsTitle : document.querySelector('#abilities h2')
 // }
 
-const selectCodeLogos = {
-    htmlIcon : document.querySelector('#code .my-skill-card:nth-of-type(1)'), 
-    cssIcon : document.querySelector('#code .my-skill-card:nth-of-type(2)'), 
-    javascriptIcon : document.querySelector('#code .my-skill-card:nth-of-type(3)'), 
-    bootstrapIcon : document.querySelector('#code .my-skill-card:nth-of-type(4)'), 
-    gitIcon : document.querySelector('#code .my-skill-card:nth-of-type(5)'), 
-    gitHubIcon : document.querySelector('#code .my-skill-card:nth-of-type(6)') 
+// const selectCodeLogos = {
+//     htmlIcon : document.querySelector('#code .my-skill-card:nth-of-type(1)'), 
+//     cssIcon : document.querySelector('#code .my-skill-card:nth-of-type(2)'), 
+//     javascriptIcon : document.querySelector('#code .my-skill-card:nth-of-type(3)'), 
+//     bootstrapIcon : document.querySelector('#code .my-skill-card:nth-of-type(4)'), 
+//     gitIcon : document.querySelector('#code .my-skill-card:nth-of-type(5)'), 
+//     gitHubIcon : document.querySelector('#code .my-skill-card:nth-of-type(6)') 
+// }
+
+class CodeLogo extends getPageElement {
+    constructor(element) {
+        super(element);
+    }
+
+    selectElement() {
+        return super.selectElement();
+    }
 }
+
+const htmlIcon = new CodeLogo('#code .my-skill-card:nth-of-type(1)');
+const cssIcon = new CodeLogo('#code .my-skill-card:nth-of-type(2)');
+const javascriptIcon = new CodeLogo('#code .my-skill-card:nth-of-type(3)');
+const bootstrapIcon = new CodeLogo('#code .my-skill-card:nth-of-type(4)');
+const gitIcon = new CodeLogo('#code .my-skill-card:nth-of-type(5)');
+const gitHubIcon = new CodeLogo('#code .my-skill-card:nth-of-type(6)');
 
 const selectDesignLogos = {
     photoshopIcon : document.querySelector('#design .my-skill-card:nth-of-type(1)'),
@@ -67,12 +84,12 @@ async function transition(){
     await contentTransition(abilitiesSection.selectElement(), 'show-page-content', 1000);
     await contentTransition(mySkillsTitle.selectElement(), 'show-page-content', 500);
     await contentTransition(codeSectionTitle.selectElement(),'show-page-content', 1000);
-    await contentTransition(selectCodeLogos.htmlIcon,'show-page-content', 300);
-    await contentTransition(selectCodeLogos.cssIcon, 'show-page-content', 300);
-    await contentTransition(selectCodeLogos.javascriptIcon, 'show-page-content', 300);
-    await contentTransition(selectCodeLogos.bootstrapIcon, 'show-page-content', 300);
-    await contentTransition(selectCodeLogos.gitIcon, 'show-page-content', 300);
-    await contentTransition(selectCodeLogos.gitHubIcon, 'show-page-content', 300);
+    await contentTransition(htmlIcon.selectElement(),'show-page-content', 300);
+    await contentTransition(cssIcon.selectElement(), 'show-page-content', 300);
+    await contentTransition(javascriptIcon.selectElement(), 'show-page-content', 300);
+    await contentTransition(bootstrapIcon.selectElement(), 'show-page-content', 300);
+    await contentTransition(gitIcon.selectElement(), 'show-page-content', 300);
+    await contentTransition(gitHubIcon.selectElement(), 'show-page-content', 300);
     await contentTransition(selectElements.designSectionTitle, 'show-page-content', 500);
     await contentTransition(selectDesignLogos.photoshopIcon, 'show-page-content', 300);
     await contentTransition(selectDesignLogos.figmaIcon, 'show-page-content', 300);
