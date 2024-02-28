@@ -23,27 +23,7 @@ const designSectionTitle = new getPageElement('h3:nth-of-type(2)');
 const mySkillsTitle = new getPageElement('#abilities h2');
 
 
-
-// const selectElements = {
-//     greetingMsg : document.querySelector('#greeting-msg'),
-//     loadingBar: document.querySelector('.loading-bar'),
-//     selfIntroduction : document.querySelector('.self-introduction'),
-//     abilitiesSection : document.querySelector('#abilities'),
-//     codeSectionTitle : document.querySelector('h3:nth-of-type(1)'),
-//     designSectionTitle : document.querySelector('h3:nth-of-type(2)'),
-//     mySkillsTitle : document.querySelector('#abilities h2')
-// }
-
-// const selectCodeLogos = {
-//     htmlIcon : document.querySelector('#code .my-skill-card:nth-of-type(1)'), 
-//     cssIcon : document.querySelector('#code .my-skill-card:nth-of-type(2)'), 
-//     javascriptIcon : document.querySelector('#code .my-skill-card:nth-of-type(3)'), 
-//     bootstrapIcon : document.querySelector('#code .my-skill-card:nth-of-type(4)'), 
-//     gitIcon : document.querySelector('#code .my-skill-card:nth-of-type(5)'), 
-//     gitHubIcon : document.querySelector('#code .my-skill-card:nth-of-type(6)') 
-// }
-
-class CodeLogo extends getPageElement {
+class Logo extends getPageElement {
     constructor(element) {
         super(element);
     }
@@ -53,18 +33,16 @@ class CodeLogo extends getPageElement {
     }
 }
 
-const htmlIcon = new CodeLogo('#code .my-skill-card:nth-of-type(1)');
-const cssIcon = new CodeLogo('#code .my-skill-card:nth-of-type(2)');
-const javascriptIcon = new CodeLogo('#code .my-skill-card:nth-of-type(3)');
-const bootstrapIcon = new CodeLogo('#code .my-skill-card:nth-of-type(4)');
-const gitIcon = new CodeLogo('#code .my-skill-card:nth-of-type(5)');
-const gitHubIcon = new CodeLogo('#code .my-skill-card:nth-of-type(6)');
+const htmlIcon = new Logo('#code .my-skill-card:nth-of-type(1)');
+const cssIcon = new Logo('#code .my-skill-card:nth-of-type(2)');
+const javascriptIcon = new Logo('#code .my-skill-card:nth-of-type(3)');
+const bootstrapIcon = new Logo('#code .my-skill-card:nth-of-type(4)');
+const gitIcon = new Logo('#code .my-skill-card:nth-of-type(5)');
+const gitHubIcon = new Logo('#code .my-skill-card:nth-of-type(6)');
+const photoshopIcon = new Logo('#design .my-skill-card:nth-of-type(1)');
+const figmaIcon = new Logo('#design .my-skill-card:nth-of-type(2)');
+const premiereIcon = new Logo('#design .my-skill-card:nth-of-type(3)');
 
-const selectDesignLogos = {
-    photoshopIcon : document.querySelector('#design .my-skill-card:nth-of-type(1)'),
-    figmaIcon : document.querySelector('#design .my-skill-card:nth-of-type(2)'),
-    premiereIcon : document.querySelector('#design .my-skill-card:nth-of-type(3)')
-}
 
 const contentTransition = function(el, classToggle, delay) {
     return new Promise((resolve, reject) => {
@@ -90,10 +68,10 @@ async function transition(){
     await contentTransition(bootstrapIcon.selectElement(), 'show-page-content', 300);
     await contentTransition(gitIcon.selectElement(), 'show-page-content', 300);
     await contentTransition(gitHubIcon.selectElement(), 'show-page-content', 300);
-    await contentTransition(selectElements.designSectionTitle, 'show-page-content', 500);
-    await contentTransition(selectDesignLogos.photoshopIcon, 'show-page-content', 300);
-    await contentTransition(selectDesignLogos.figmaIcon, 'show-page-content', 300);
-    contentTransition(selectDesignLogos.premiereIcon, 'show-page-content', 300);
+    await contentTransition(designSectionTitle.selectElement(), 'show-page-content', 500);
+    await contentTransition(photoshopIcon.selectElement(), 'show-page-content', 300);
+    await contentTransition(figmaIcon.selectElement(), 'show-page-content', 300);
+    contentTransition(premiereIcon.selectElement(), 'show-page-content', 300);
 }
 
 transition();
